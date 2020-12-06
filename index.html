@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Porfolio</title>
+    <link rel = "stylesheet" type = "text/css" href = "./assets/css/style.css"/>
 </head>
+
 <body>
-    <!-- Header Section -->
+    <!-- 'Header' Section -->
     <header>
-        <h1> 
-            <a href="/">Archana Nagaraja</a>
-        </h1>
+        <div>
+            <h1> 
+                <a href="/">Archana Nagaraja</a>
+            </h1>
+        </div>
+        
         <!-- nav links -->
         <nav> 
             <ul>
@@ -24,18 +28,24 @@
                     <a href = "#contact-me">Contact Me </a>
                 </li>
                 <li>
-                    Resume
+                    <a href = "Resume">Resume </a>
                 </li>
             </ul>
         </nav>
     </header>
    
-        <!-- Cool title section -->
-    <div class = "cooltitle">
-            <p>Cool title!!!</p>
-    </div>
+        <!-- 'Cool title' section -->
 
-        <!-- About Me Section -->
+    <section class = "cooltitle">
+        <div>
+            <h2>
+                Web Developer
+            </h2>
+        </div>
+            
+    </section>
+
+        <!-- 'About Me' Section -->
         <section id = "about-me" class = "intro">
             <div>
                 <!-- flex -->
@@ -52,7 +62,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iste. Exercitationem sed ab, 
                     impedit, amet libero quia at dolorum, odio ratione repellendus tempora repellat? 
-                    Eius rem sed voluptas qui, velit libero labore minus? Nobis nemo tempora voluptatem 
+                    Eius rem sed voluptas qui, velit libero labore minus? Nobis nemo tempora voluptatem <br>
                     nihil eum praesentium voluptatum doloremque quibusdam. Quo et expedita suscipit ex corporis 
                     quia nam, rem nemo! Labore pariatur sapiente ipsa! Earum ipsa praesentium, odit porro ipsam 
                     odio debitis saepe asperiores minima aperiam omnis sed pariatur necessitatibus, ratione, 
@@ -61,70 +71,71 @@
             </div>
         </section>
 
-        <!-- Work Section -->
-        <section id = "work" >
+        <!-- 'Work' Section -->
+        <section id = "work" class = "work-details">
             <div>
                 <h2 class = "section-title">Work</h2>
             </div>
-            <div class = "work-details">
-                <!-- First Application-->
-                <article class = "Application-1">
-                    <img src = "./images/placeholderImage.jpeg"/>
-                    <div class = "app-details">
-                        <h3 class = "app-name">Run-Buddy</h3>
-                        <h4 class = "technology">HTML/CSS</h4>
-                    </div>
-                </article>
-                <!-- Second Application-->
-                <article class = "Application-2">
-                    <img src = "./images/placeholderImage.jpeg"/>
-                    <div class = "app-details">
-                        <h3 class = "app-name">ComingSoon-2</h3>
-                        <h4 class = "technology">JavaScript</h4>
-                    </div>
-                </article>
-                <!-- Third Application-->
-                <article class = "Application-3">
-                    <img src = "./images/placeholderImage.jpeg"/>
-                    <div class = "app-details">
-                        <h3 class = "app-name">ComingSoon-3</h3>
-                        <h4 class = "technology">MERN Stack</h4>
-                    </div>
-                </article>
-                <!-- Fourth Application-->
-                <article class = "Application-4">
-                    <img src = "./images/placeholderImage.jpeg"/>
-                    <div class = "app-details">
-                        <h3 class = "app-name">ComingSoon-4</h3>
-                        <h4 class = "technology">Reach/JS/CSS</h4>
-                    </div>
-                </article>
-                <!-- Fifth Application-->
-                <article class = "Application-5">
-                    <img src = "./images/placeholderImage.jpeg"/>
-                    <div class = "app-details">
-                        <h3 class = "app-name">ComingSoon-5</h3>
-                        <h4 class = "technology">Node</h4>
-                    </div>
-                </article>
+            <div class = "grid-container">
+                <div class = "grid-application-container">
+                    <!-- First Application-->
+                    <article class = "grid-app app-1">
+                        <div class = "app1-details">
+                            <h3>Run-Buddy</h3>
+                            <h5>HTML/CSS</h5>
+                        </div>
+                    </article>
+                    <!-- Second Application-->
+                    <article class = "grid-app app-2">
+                        <!-- <img src = "./assets/images/300X200.png" alt=""/> -->
+                        <div class = "app2-details">
+                            <h3 class = "app-name">Pastel Puzzels</h3>
+                            <h4 class = "technology">JavaScript</h4>
+                        </div>
+                    </article>
+                    <!-- Third Application-->
+                    <article class = "grid-app app-3">
+                        <!-- <img src = "./assets/images/300X200.png"  alt=""/> -->
+                        <div class = "app3-details">
+                            <h3 class = "app-name">Surf Report</h3>
+                            <h4 class = "technology">MERN Stack</h4>
+                        </div>
+                    </article>
+                    <!-- Fourth Application-->
+                    <article class = "grid-app app-4">
+                        <!-- <img src = "./assets/images/300X200.png" alt=""/> -->
+                        <div class = "app4-details">
+                            <h3 class = "app-name">Calculator</h3>
+                            <h4 class = "technology">React/JS/CSS</h4>
+                        </div>
+                    </article>
+                    <!-- Fifth Application-->
+                    <article class = "grid-app app-5">
+                        <!-- <img src = "./assets/images/300X200.png" alt=""/> -->
+                        <div class = "app5-details">
+                            <h3 class = "app-name">LED Wall</h3>
+                            <h4 class = "technology">Node</h4>
+                        </div>
+                    </article>
+                </div>
             </div>
             
         </section>
 
-        <!-- Contact Me Section -->
-        <section id = "contact_me" class = "contact">
+        <!-- 'Contact Me' Section -->
+        <section id = "contact-me" class = "contact-me-details">
             <div>
-                <h2 class = "section-title">
-                    Contact Me
-                </h2>
+                <h2>Contact Me</h2>
             </div>
             <div class = "contactlinks">
-                <a href = "">111.111.1111</a>
-                <a href = "">xxx@website.com</a>
-                <a href = "">GitHub</a>
-                <a href = "">Linkedin</a>
-                <a href = "">Twitter</a>
-            </div>
+                <div><a href = "">111.111.1111</a></div>
+                <div><a href = "">xxx@website.com</a></div>
+                <div><a href = "https://github.com/archana-nagaraj">GitHub</a></div>
+                <div><a href = "https://www.linkedin.com/in/archana-nagaraja/">Linkedin</a></div>
+                <div> <a href = "www.twitter.com">Twitter</a> </div> 
+            </div>          
         </section>
 </body>
 </html>
+
+

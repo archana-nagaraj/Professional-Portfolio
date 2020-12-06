@@ -1,3 +1,251 @@
-h1 {
-    background-color: Blue;
+/* * {
+    margin :0;
+    padding: 0;
+} */
+
+/* CSS Variables */
+
+:root {
+    --lightcyan: #c9e0dd;
+    --black: #000000;
+    --darkgrey: #808080;
 }
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+/* Begin...Header section styling */
+
+    header {
+        padding: 10px 40px;
+        background-color: var(--black);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        background-color: var(--lightcyan);
+        font-weight: bold;
+        font-size: 36px;
+        color: var(--black);
+        margin: 0;
+    }
+    header h1 a{
+        color: var(--black);
+    }
+
+    header a {
+        text-decoration: none;
+        color: var(--lightcyan);
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+        font-weight: lighter;
+        font-size: 1.89vw;
+        text-decoration: underline;
+    }
+/* Ends...Header section styling */
+
+/* Begin...Cool-title section styling */
+.cooltitle {
+    padding : 150px;
+    background-image: url("../images/backgroundsection.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.cooltitle h2 {
+    background-color: var(--lightcyan);
+    position: absolute;
+    right: 80px;
+    bottom: 2px;
+}
+/* Ends...Cool-title section styling */
+
+/* Begin...'About Me' Section Styling  */
+
+.intro {
+    margin: 10px;
+    margin-left: 150px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro h2 {
+    color: var(--darkgrey);
+    /* font-style: */
+    /* border-right: 2px solid var(--darkgrey); */
+    padding-right: 10px;
+    text-align: right;
+}
+
+.intro p {
+    padding-left: 20px;
+    border-left:2px solid var(--darkgrey);
+}
+
+/* 'Work' Section Styling Begins */
+
+ .work-details {
+    margin: 10px;
+    margin-left: 150px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .work-details h2 {
+    color: var(--darkgrey);
+    padding-right: 20px;
+} 
+
+.grid-container {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    border-left:2px solid var(--darkgrey);
+}
+
+.grid-application-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: dense;  
+}
+
+.grid-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--lightcyan);
+    border-radius: 5px;
+    font-size: 10px;
+    position: relative;
+}
+
+.app-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url("../images/Run-Buddy.png"); 
+}
+
+.app1-details {
+    background-color: var(--lightcyan);
+    padding-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    line-height: 0;
+}
+
+.app-2 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    position: relative;
+    background-image: url("../images/pastelpuzzels.png");
+}
+
+.app2-details {
+    background-color: var(--lightcyan);
+    padding-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    line-height: 0;
+}
+
+.app-3 {
+    grid-column: 2 /span 1;
+    grid-row: 3 / span 1;
+    position: relative;
+    background-image: url("../images/surf-report.jpg");
+}
+.app3-details {
+    background-color: var(--lightcyan);
+    padding-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    overflow: auto;
+    line-height: 0;
+}
+
+.app-4 {
+    position: relative;
+    background-image: url("../images/calc.png");
+}
+.app4-details {
+    background-color: var(--lightcyan);
+    padding-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    line-height: 0;
+}
+
+.app-5 {
+    position: relative;
+    background-image: url("../images/led-wall.jpg");
+}
+
+.app5-details {
+    background-color: var(--lightcyan);
+    padding-right: 10px;
+    /* position: absolute;
+    left: 0;
+    bottom: 10px; */
+    line-height: 0;
+}
+
+
+/* Begin...'Work' Section Styling  */
+
+/* Begin.. 'Contact Me' Section */
+
+.contact-me-details{
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-me-details h2{
+    color: var(--darkgrey);
+    padding-right: 20px;
+    text-align: right;
+}
+
+.contactlinks{
+    width: 100%;
+    border-left: 2px solid var(--darkgrey);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap : wrap;
+}
+
+.contactlinks a {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 1.89vw;  
+}
+
+/* End.. 'Contact Me' Section */
