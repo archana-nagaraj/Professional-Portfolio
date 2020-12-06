@@ -141,7 +141,7 @@ body {
 .grid-application-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 200px;
     grid-gap: 20px;
     grid-auto-flow: dense;  
 }
@@ -164,15 +164,7 @@ body {
 
 .app-1:hover {
     opacity: .5;
-}
-
-.app1-details {
-    background-color: var(--lightcyan);
-    padding-right: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    line-height: 0;
+    cursor: pointer;
 }
 
 .app-2 {
@@ -184,16 +176,7 @@ body {
 
 .app-2:hover {
     opacity: .5;
-}
-
-.app2-details {
-    background-color: var(--lightcyan);
-    padding-right: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: auto;
-    line-height: 0;
+    cursor: pointer;
 }
 
 .app-3 {
@@ -205,16 +188,7 @@ body {
 
 .app-3:hover {
     opacity: .5;
-}
-
-.app3-details {
-    background-color: var(--lightcyan);
-    padding-right: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    overflow: auto;
-    line-height: 0;
+    cursor: pointer;
 }
 
 .app-4 {
@@ -224,15 +198,7 @@ body {
 
 .app-4:hover {
     opacity: .5;
-}
-
-.app4-details {
-    background-color: var(--lightcyan);
-    padding-right: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    line-height: 0;
+    cursor: pointer;
 }
 
 .app-5 {
@@ -242,18 +208,18 @@ body {
 
 .app-5:hover {
     opacity: .5;
+    cursor: pointer;
 }
-.app5-details {
+.app5-details, .app4-details, .app3-details, .app2-details, .app1-details {
     background-color: var(--lightcyan);
     padding-right: 10px;
-    /* position: absolute;
+    position: absolute;
     left: 0;
-    bottom: 10px; */
-    line-height: 0;
+    bottom: 10px;
+    line-height: 0.5;
 }
 
-
-/* Begin...'Work' Section Styling  */
+/* End...'Work' Section Styling  */
 
 /* Begin.. 'Contact Me' Section */
 
