@@ -162,6 +162,10 @@ body {
     background-image: url("../images/Run-Buddy.png"); 
 }
 
+.app-1:hover {
+    opacity: .5;
+}
+
 .app1-details {
     background-color: var(--lightcyan);
     padding-right: 10px;
@@ -176,6 +180,10 @@ body {
     grid-row: 3 / span 1;
     position: relative;
     background-image: url("../images/pastelpuzzels.png");
+}
+
+.app-2:hover {
+    opacity: .5;
 }
 
 .app2-details {
@@ -194,6 +202,11 @@ body {
     position: relative;
     background-image: url("../images/surf-report.jpg");
 }
+
+.app-3:hover {
+    opacity: .5;
+}
+
 .app3-details {
     background-color: var(--lightcyan);
     padding-right: 10px;
@@ -208,6 +221,11 @@ body {
     position: relative;
     background-image: url("../images/calc.png");
 }
+
+.app-4:hover {
+    opacity: .5;
+}
+
 .app4-details {
     background-color: var(--lightcyan);
     padding-right: 10px;
@@ -222,6 +240,9 @@ body {
     background-image: url("../images/led-wall.jpg");
 }
 
+.app-5:hover {
+    opacity: .5;
+}
 .app5-details {
     background-color: var(--lightcyan);
     padding-right: 10px;
