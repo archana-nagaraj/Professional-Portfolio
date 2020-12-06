@@ -79,7 +79,7 @@ body {
 
 .intro {
     margin: 10px;
-    margin-left: 150px;
+    margin-left: 115px;
     margin-right: 50px;
     display: flex;
     justify-content: space-between;
@@ -87,15 +87,33 @@ body {
 
 .intro h2 {
     color: var(--darkgrey);
-    /* font-style: */
-    /* border-right: 2px solid var(--darkgrey); */
-    padding-right: 10px;
+    padding-right: 20px;
     text-align: right;
+}   
+
+.about-me-container {
+    position: relative; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-left : 2px solid var(--darkgrey);
+    padding-left: 20px;
 }
 
-.intro p {
-    padding-left: 20px;
-    border-left:2px solid var(--darkgrey);
+.about-me-container .about-me-flex {
+    position: relative;
+    display: flex;
+}
+
+.about-me-container .about-me-flex .photo{
+    max-width: 100px;
+    flex: 0 0 150px;
+}
+
+.about-me-container .about-me-flex .content{
+    margin-left: 10px;
+    margin-top: 0px;
 }
 
 /* 'Work' Section Styling Begins */
