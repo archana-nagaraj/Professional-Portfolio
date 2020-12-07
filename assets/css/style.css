@@ -2,13 +2,15 @@
 /* CSS Variables */
 
 :root {
-    --lightcyan: #c9e0dd;
+    --lightteal: #b2d8d8;
     --black: #000000;
     --darkgrey: #808080;
+    --lightblue: #e8f4f8;
 }
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--lightblue);
 }
 
 /* Begin...Header section styling */
@@ -22,7 +24,7 @@ body {
     }
 
     header h1 {
-        background-color: var(--lightcyan);
+        background-color: var(--lightteal);
         font-weight: bold;
         font-size: 36px;
         color: var(--black);
@@ -34,7 +36,7 @@ body {
 
     header a {
         text-decoration: none;
-        color: var(--lightcyan);
+        color: var(--lightteal);
     }
 
     header nav ul {
@@ -64,7 +66,7 @@ body {
 }
 
 .cooltitle h2 {
-    background-color: var(--lightcyan);
+    background-color: var(--lightteal);
     position: absolute;
     right: 80px;
     bottom: 2px;
@@ -154,7 +156,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid var(--lightcyan);
+    border: 5px solid var(--lightteal);
     border-radius: 5px;
     font-size: 10px;
     position: relative;
@@ -215,7 +217,7 @@ body {
     cursor: pointer;
 }
 .app1-details, .app2-details, .app3-details, .app4-details, .app5-details {
-    background-color: var(--lightcyan);
+    background-color: var(--lightteal);
     padding-right: 10px;
     position: absolute;
     left: 0;
